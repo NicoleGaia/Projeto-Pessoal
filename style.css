@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(192, 26, 103), rgb(73, 4, 73), black, black,rgb(73, 4, 73),rgb(192, 26, 103));
+    background-repeat: repeat;
+    background-size: contain;
+    /*display: inline-block;
+    position: fixed;*/
+}
+#content{
+    width: 75vw;
+    height: 95vh;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#reticencias{
+    display: flex;
+    justify-self: flex-end;
+    padding: 20px;
+}
+#perfil{
+    display: flex;
+    flex-direction: column;
+    
+}
+#perfil > ul > li{
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+#infos{
+    text-align: center;
+
+}
+#infos > li{
+    list-style: none;
+    color: white;
+    
+}
+#infos > li > img{
+    margin: auto;
+    padding: 3px;
+
+}
+#content #skills{
+    color: white;
+    background-color: #7115B4;
+    padding: 8px;
+    border-radius: 10px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#skills .seta{
+    
+}
+#list{
+    padding-top: 5px;
+    padding-left: 15px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+    
