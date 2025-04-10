@@ -60,8 +60,13 @@ html, body{
     display: grid;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 #skills .seta{
+    
+}
+#skills-list{
+   display: none;
     
 }
 #list{

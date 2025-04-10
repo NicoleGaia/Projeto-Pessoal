@@ -9,7 +9,23 @@
 </head>
 <script>
     function clicar(){
-        var skills = document.getElementById("skills-list")
+        var skills = document.getElementById("seta")
+        var skillsList = document.getElementById("skills-list")
+        var display = 0
+
+        if(skillsList.style.display = 'none'){
+            skillsList.style.display = 'block'
+        } else if(skillsList.style.display = 'block'){
+            skillsList.style.display = 'none'
+        }
+        /*if(display == 0){
+            skillsList.style.display = 'none'
+            display = 1
+        } else {
+            skillsList.style.display = 'block'
+            display = 0
+        }*/
+        
     }
 </script>
 <body>
@@ -35,7 +51,7 @@
         <br>
         <div id="skills">
             <h1>Skills</h1>
-            <img class="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicar()">
+            <img id="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicar()" style="cursor: pointer;">
         <div id="skills-list">
             <h3>Ferramentas:</h3>
             <br>
