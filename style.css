@@ -33,6 +33,9 @@ html, body{
     flex-direction: column;
     
 }
+h1{
+    font-size: 35px;
+}
 #perfil > ul > li{
     list-style: none;
     color: white;
@@ -47,25 +50,30 @@ html, body{
     color: white;
     
 }
+#infos > li:hover{
+    transform: translate(0, -5px);
+}
 #infos > li > img{
     margin: auto;
     padding: 3px;
 
 }
-#content #skills{
+#content .skills{
     color: white;
-    background-color: #7115B4;
+    border: 1px solid white;
     padding: 8px;
     border-radius: 10px;
     display: grid;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px;
+    width: 73vw;
+    margin: auto;
 }
-#skills .seta{
-    
+#content .skills:hover{
+    background-color: #594fb1;
+    border: none;
 }
-#skills-list{
+.skills-list{
    display: none;
     
 }
@@ -76,6 +84,95 @@ html, body{
     flex-direction: row;
     justify-content: space-between;
 }
+#content .idiomas{
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 73vw;
+    margin: auto;
+}
+#content .idiomas:hover{
+    background-color: #594fb1;
+    border: none;
+}
+.idiomas-list{
+   display: none;
+    
+}
+#content .portfolio{
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 73vw;
+    margin: auto;
+}
+#content .portfolio:hover{
+    background-color: #594fb1;
+    border: none;
+}
+.portfolio-list{
+   display: none;
+    
+}
+.portfolio-list > h3{
+    
+}
+.portfolio-list > a{
+    color: white;
+    text-decoration: none;
+}
+.portfolio-list > a:hover{
+    text-decoration: underline;
+}
+#content .experiencia{
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 73vw;
+    margin: auto;
+}
+#content .experiencia:hover{
+    background-color: #594fb1;
+    border: none;
+}
+.experiencia-list{
+   display: none;
+    
+}
+.experiencia-list > li{
+    list-style: none;
+}
+.experiencia-list > h3{
+    padding-bottom: 3px;
+}
 
-
+@media screen and (min-width: 800px){
+    #perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    h1{
+        text-align: left;
+    }
+    /*#perfil > img{
+        width: 250px;
+        height: 300px;
+    }*/
+    #infos{
+        text-align: left;
+    }
+}
     

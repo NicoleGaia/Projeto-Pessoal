@@ -6,28 +6,8 @@
     <title>Projeto Pessoal</title>
     <link rel="shortcut icon" href="img/icons8-favicon-16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<script>
-    function clicar(){
-        var skills = document.getElementById("seta")
-        var skillsList = document.getElementById("skills-list")
-        var display = 0
-
-        if(skillsList.style.display = 'none'){
-            skillsList.style.display = 'block'
-        } else if(skillsList.style.display = 'block'){
-            skillsList.style.display = 'none'
-        }
-        /*if(display == 0){
-            skillsList.style.display = 'none'
-            display = 1
-        } else {
-            skillsList.style.display = 'block'
-            display = 0
-        }*/
-        
-    }
-</script>
 <body>
     <section id="content">
         <div id="reticencias">
@@ -41,39 +21,98 @@
                 <li><h1>Nicole Gaia</h1></li>
                 <br>
                 <div id="infos">
-                    <li><br><img src="img/icons8-pessoa-16.png" alt=""><h4>Student</h4></li>
-                    <li><br><img src="img/icons8-localização-16.png" alt=""><h4>Uberlândia - MG</h4></li>
-                    <li><br><img src="img/icons8-whatsapp-16.png" alt=""><h4>(34) 99900-7599</h4></li>
-                    <li><br><img src="img/icons8-nova-mensagem-16.png" alt=""><h4>nicgaia01@gmail.com</h4></li>
+                    <li><br><h4><img src="img/icons8-pessoa-16.png" alt="">&nbsp  Student</h4></li>
+                    <li><br><h4><img src="img/icons8-localização-16.png" alt="">&nbsp  Uberlândia - MG</h4></li>
+                    <li><br><h4><img src="img/icons8-whatsapp-16.png" alt="">&nbsp  (34) 99900-7599</h4></li>
+                    <li><br><h4><img src="img/icons8-nova-mensagem-16.png" alt="">&nbsp  nicgaia01@gmail.com</h4></li>
+                    <li><br><h4><img src="img/icons8-linkedin-16 (1).png" alt="">&nbsp  linkedin.com/in/nicole-gaia</h4></li>
                 </div>
             </ul>
         </div>
         <br>
-        <div id="skills">
+        <div class="skills">
             <h1>Skills</h1>
-            <img id="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicar()" style="cursor: pointer;">
-        <div id="skills-list">
-            <h3>Ferramentas:</h3>
-            <br>
-                <img class="logo" src="img/icons8-html-5-32.png" alt="">
-                <img class="logo" src="img/icons8-css-32.png" alt="">
-                <img class="logo" src="img/icons8-javascript-32.png" alt="">
-                <img class="logo" src="img/icons8-nó-js-32.png" alt="">
-            <br>
-            <h3>Pessoal:</h3>
-            <ul id="list">
-                <li>Pensamento lógico</li>
-                <li>Comunicação</li>
-                <li>Resolução de problemas</li>
-                <li>Liderança</li>
-            </ul>
+            <img id="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicarSkills()" style="cursor: pointer;">
+            <div class="skills-list">
+                <h3>Ferramentas:</h3>
+                <br>
+                    <img class="logo" src="img/icons8-html-5-32.png" alt="">
+                    <img class="logo" src="img/icons8-css-32.png" alt="">
+                    <img class="logo" src="img/icons8-javascript-32.png" alt="">
+                    <img class="logo" src="img/icons8-nó-js-32.png" alt="">
+                <br>
+                <h3>Pessoal:</h3>
+                <ul id="list">
+                    <li>Pensamento lógico</li>
+                    <li>Comunicação</li>
+                    <li>Resolução de problemas</li>
+                    <li>Liderança</li>
+                </ul>
+            </div>
         </div>
+        <br>
+        <div class="idiomas">
+            <h1>Idiomas</h1>
+            <img id="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicarIdiomas()" style="cursor: pointer;">
+            <div class="idiomas-list">
+                <h3>Inglês:</h3>
+                <ul id="list">
+                    <li>Intermediário</li>
+                </ul>
+                <br>
+                <h3>Português:</h3>
+                <ul id="list">
+                    <li>Fluente</li>
+                </ul>
+
+            </div>
         </div>
-
-        
-
-        
-        
+        <br>
+        <div class="portfolio">
+            <h1>Portfólio</h1>
+            <img id="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicarPortfolio()" style="cursor: pointer;">
+            <div class="portfolio-list">
+                <h3><img src="img/icons8-github-16.png" alt="">  Projeto Artigo</h3>
+                <a href="https://nicolegaia.github.io/Projeto-Artigo/">https://nicolegaia.github.io/Projeto-Artigo/</a>
+                <br>
+                <br>
+                <h3><img src="img/icons8-github-16.png" alt="">  Projeto Iframe</h3>
+                <a href="https://nicolegaia.github.io/Projeto-Cordel/">https://nicolegaia.github.io/Projeto-Cordel/</a>
+            </div>
+        </div>
+        <br>
+        <div class="experiencia">
+            <h1>Experiência Educacional / Profissional</h1>
+            <img id="seta" src="img/icons8-seta-para-baixo-32 (1).png" alt="" onclick="clicarExperiencia()" style="cursor: pointer;">
+            <div class="experiencia-list">
+                <h3>Escola SESI</h3>
+                <h6><img src="img/icons8-calendário-16.png" alt="">&nbsp  jan de 2020 - dez de 2022</h6>
+                <br>
+                <h5>Ensino Médio</h5>
+                <br>
+                <br>
+                <br>
+                <h3>Técnico SENAI</h3>
+                <h6><img src="img/icons8-calendário-16.png" alt="">&nbsp  jan de 2021 - fev de 2022</h6>
+                <br>
+                <h5>Ensino Técnico Informática para Internet</h5>
+                <br>
+                <br>
+                <br>
+                <h3>Cambridge English</h3>
+                <h6><img src="img/icons8-calendário-16.png" alt=""> &nbsp  verificação emitida em jul de 2021</h6>
+                <br>
+                <h5>Cambridge English Certified FCE - B2 First</h5>
+                <br>
+                <br>
+                <br>
+                <h3>Roberta Machado Semijoias</h3>
+                <h6><img src="img/icons8-calendário-16.png" alt="">&nbsp  dez de 2023 - jan de 2024 | dez de 2024 - jan de 2025</h6>
+                <br>
+                <h5>Consultora de Vendas</h5>
+            </div>
+        </div>
+        <br>
     </section>
 </body>
 </html>
