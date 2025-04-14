@@ -12,7 +12,7 @@ html, body{
     background-size: contain;
     display: inline-block;
     position: relative;
-    overflow: scroll;
+    overflow: auto;
 }
 /*content::after, 
 content::before{
