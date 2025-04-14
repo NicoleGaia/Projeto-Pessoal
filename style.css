@@ -86,7 +86,10 @@ h1{
 #infos{
     text-align: left;
     padding-left: 15px;
-
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 #infos > li{
     list-style: none;
