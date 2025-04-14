@@ -54,6 +54,7 @@ content::before{
 }
 #reticencias{
     display: flex;
+    flex-direction: column;
     justify-self: flex-end;
     padding: 20px;
 }
@@ -70,6 +71,9 @@ content::before{
     border-radius: 50%;
     margin: auto;
     margin-bottom: 15px;
+}
+#foto:hover{
+    transform: translate(0, -5px);
 }
 h1{
     font-size: 35px;
